@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="csrf-param" content="_csrf">
+		<meta name="csrf-token" content="OFeLKEJU3uDPuVhH53EAdW9WglmiYCZwdbQnN-6GBSbuPw7EfrMacC_dH-6oVf1ATAUTmG3wpscvi_-u1KelhQ==">
+		<title>初印象肌肤官网</title>
+		<meta name="keywords" content="初印象，初印象化妆品，初印象官网, 初印象护肤品，初印象套装，初印象面膜" />
+		<meta name="description" content="初印象化妆品官方网站，根据实际肌肤问题，初印象专业护肤老师为您提供一对一专业服务，让您的肌肤护理问题得到准确解决。" />
+		<link rel="Shortcut Icon" href="assets/newfac.ico">
+		<link rel="stylesheet" href="static/css/common20131025.css" />
+		<link rel="stylesheet" href="static/css/index20131025.css" />
+		<link rel="stylesheet" href="static/css/default.css" />
+		<link rel="stylesheet" href="static/css/min.css" />
+		<link rel="stylesheet" href="static/css/video-js.min.css" />
+		<link rel="stylesheet" href="static/css/set1.css" />
+		<link rel="stylesheet" href="static/css/qudou20131218.css" />
+		<script src="static/js/jquery-1.8.3.min.js"></script>
+		<script src="static/js/cycle.jquery.js"></script>
+		<script src="static/js/utils.js"></script>
+		<script src="static/js/jh.js"></script>
+		<script src="static/js/mobile.js"></script>
+		<script src="static/js/wx.js"></script>
+		<script src="static/js/video.js"></script>
+		<script src="static/js/blk-nav.js"></script>
+		<script src="static/js/artdialog.min.js"></script>
+		<script src="static/js/common.js"></script>
+
+		<style>
+			.footer {
+				margin-top: 30px;
+			}
+			
+			.f_zs {
+				margin-bottom: 40px;
+			}
+			
+			.f_zs a {
+				float: none;
+				display: inline-block;
+			}
+			
+			#prod-menu {
+				width: 70px;
+				position: relative;
+			}
+			
+			#prod-menu>ul {
+				display: none;
+				width: 96px;
+				background: #fff;
+				border: 1px solid #616161;
+				position: absolute;
+				left: -9px;
+				top: 36px;
+				z-index: 999999;
+				margin-left: 0;
+			}
+			
+			#prod-menu:hover>ul,
+			#prod-menu>ul:hover {
+				display: block;
+			}
+			
+			#prod-menu>ul>li {
+				clear: both;
+				float: none;
+				display: block;
+				text-align: center;
+				font-size: 13px;
+				padding-top: 4px;
+				padding-bottom: 4px;
+			}
+			
+			.vip {
+				width: 144px;
+				height: 45px;
+				margin-top: 8px;
+				display: inline-block;
+			}
+			
+			.brand,
+			.ppsg,
+			.zjtd {
+				width: 85px;
+				height: 45px;
+				margin-top: 10px;
+				display: inline-block;
+			}
+			
+			.hvip {
+				float: right;
+				width: 413px;
+				height: 54px;
+				margin-top: -14px;
+			}
+			
+			.sidebar-right {
+				position: fixed;
+				top: 400px;
+				right: 0;
+			}
+			
+			.sidebar-right .sidebar-content {
+				width: 50px;
+				height: 200px;
+			}
+			
+			.wx-content {
+				position: relative;
+				width: 50px;
+				height: 50px;
+				margin-bottom: 6px;
+				background: url("static/images/wx01.png") no-repeat center center;
+				background-size: 100% 100%;
+			}
+			
+			.wx-content .qrcode {
+				display: none;
+				position: absolute;
+				top: -130px;
+				left: -210px;
+			}
+			
+			.wx-content:hover {
+				background-image: url("static/images/wx.png");
+			}
+			
+			.wx-content:hover .qrcode {
+				display: block;
+			}
+			
+			.tel-content {
+				position: relative;
+				width: 50px;
+				height: 50px;
+				margin-bottom: 6px;
+				background: url("static/images/tel.png") no-repeat center center;
+				background-size: 100% 100%;
+			}
+			
+			.tel-content .tel {
+				display: none;
+				position: absolute;
+				top: -30px;
+				left: -210px;
+			}
+			
+			.tel-content:hover {
+				background-image: url("static/images/tel01.png");
+			}
+			
+			.tel-content:hover .tel {
+				display: block;
+			}
+			
+			.main_bot {
+				position: relative;
+			}
+			
+			.search {
+				position: absolute;
+				top: 30px;
+				left: 715px;
+			}
+			
+			.main {
+				min-height: 490px;
+			}
+			
+			.form-input {
+				width: 200px;
+				height: 22px;
+				float: left;
+				padding-left: 4px;
+				border-right: 0;
+				border: 1px solid #ccc;
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+			}
+			
+			.form-btn {
+				width: 60px;
+				height: 26px;
+				border: 0;
+				background-color: #096347;
+				color: #fff;
+				margin-left: 0;
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+			}
+			
+			.main {
+				margin-top: 0;
+			}
+		</style>
+		<script>
+			var baseUrl = '',
+				process_request = "正在处理您的请求...";
+		</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="head_main end">
+				<div class="logo">
+					<img src="static/picture/logo.png">
+				</div>
+				<div id="headtext">
+					<span class="">您好，欢迎光临初印象官方网站。</span>
+				</div>
+				<div class="main_top">
+					<ul class="main_top_r fr">
+						<li class="fl">
+							<a href="javascript:;" title="投诉建议">投诉建议</a>|
+						</li>
+						<li class="fl">
+							<a href="SecurityCheck/index.html" title="防伪码" target="_blank">防伪码查询</a></li>
+					</ul>
+				</div>
+				<div class="main_bot">
+					<div class="search">
+						<form id="w0" action="/site/search" method="post">
+							<input type="hidden" name="_csrf" value="OFeLKEJU3uDPuVhH53EAdW9WglmiYCZwdbQnN-6GBSbuPw7EfrMacC_dH-6oVf1ATAUTmG3wpscvi_-u1KelhQ=="> <input type="text" id="goods-goods_name" class="form-input input-sm col-md-3" name="keywords" placeholder="请输入产品名称"> <span class="form-group">
+<button type="button" class="btn form-btn btn-lg" >搜索</button> </span>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="nav_list" style="position:relative;" hidden="true">
+					<ul style="margin-left:273px;">
+						<li class="fl">
+							<a href="#" title="首页">首页</a>
+						</li>
+						<li>|</li>
+						<li class="fl" id="prod-menu">
+							<a href="javascript:;" title="产品中心" target="_blank">产品中心</a>
+							<ul>
+								<li>
+									<a href="javascript:;">祛痘中心</a>
+								</li>
+								<li>
+									<a href="javascript:;">淡斑中心</a>
+								</li>
+								<li>
+									<a href="javascript:;">祛黄中心</a>
+								</li>
+								<li>
+									<a href="javascript:;">去皱中心</a>
+								</li>
+								<li>
+									<a href="javascript:;">眼部护理中心</a>
+								</li>
+							</ul>
+						</li>
+						<li>|</li>
+
+						<li class="fl">
+							<a href="javascript:;" title="初印象大学"level>初印象大学</a>
+						</li>
+						<li>|</li>
+
+						<li class="fl">
+							<a href="#" title="视频中心" target="_self">视频中心</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			.con1>a {
+				margin: 0 15px;
+			}
+			
+			.banner_box img {
+				height: 535px;
+			}
+			
+			.nav_men_b {
+				width: 100%;
+				height: 27px;
+				position: absolute;
+				top: 180px;
+				z-index: 9;
+				left: 0px;
+				background: #096347;
+				overflow: hidden;
+			}
+			/*.banner {
+      margin-top: 30px;
+    }*/
+			
+			.news-list {
+				border-bottom: 1px dashed #ccc;
+				width: 480px;
+				line-height: 25px;
+				text-overflow: ellipsis;
+				-o-text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+				height: 30px;
+				line-height: 36px;
+				padding-left: 20px;
+				padding-top: 3px;
+				border-bottom: 1px dashed #ddd;
+				background-image: url(static/images/68.jpg);
+				background-repeat: no-repeat;
+				background-position: 10px 17px;
+			}
+			
+			.news-list:last-child {
+				border-bottom: 1px solid transparent;
+			}
+			
+			#news {
+				cursor: pointer;
+			}
+			
+			
+			.active {
+				background: #096347;
+				padding: 2px 6px;
+				color: #fff;
+				cursor: pointer;
+			}
+		</style>
+		<script>
+			$(function() {
+				$('#banner_box').cycle({
+					fx: 'fade',
+					speed: 1000,
+					pager: '#nav_p',
+					delay: 500,
+					prev: '.dg_prev',
+					next: '.dg_next',
+					pagerEvent: 'click',
+					activePagerClass: 'page_xz',
+					pagerAnchorBuilder: function(idx, slide) {
+						return '#nav_p li:eq(' + idx + ')';
+					}
+				});
+			});
+		</script>
+		<div class="banner">
+			<div class="banner_p">
+				<ul id="nav_p">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="banner_left"><img src="static/picture/xj_01.gif" class="dg_prev" style="opacity: 0.6;cursor: pointer;">
+			</div>
+			<div class="banner_right"><img src="static/picture/xj_02.gif" class="dg_next" style="opacity: 0.6;cursor: pointer;">
+			</div>
+			<div id="banner_box">
+				<a href="javascript:;">
+					<img src="static/picture/洁面露.jpg">
+				</a>
+				<a href="javascript:;">
+					<img src="static/picture/banner=v20180424.jpg">
+				</a>
+				<a href="javascript:;">
+					<img src="static/picture/卸妆水pc端海报.jpg">
+				</a>
+				<a href="javascript:;">
+					<img src="static/picture/美丽中国行20180507.jpg">
+				</a>
+
+				<a href="javascript:;">
+					<img src="static/picture/v=banner20180116.png">
+				</a>
+				<a href="javascript:;">
+					<img src="static/picture/v=banner20180118.jpg">
+				</a>
+
+				<a href="javascript:;">
+					<img src="static/picture/banner2017-08-12.jpg">
+				</a>
+				<a href="javascript:;" target="_blank">
+					<img src="static/picture/banner&v=20170815.jpg">
+				</a>
+
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="desc">
+			<div class="descmain">
+				<div class="descmain_r">
+					<img src="static/picture/rer_r.jpg">
+					<a href="javascript:show_rand_wx(1,6);"></a>
+				</div>
+			</div>
+		</div>
+		<div id="" style="margin: 0 auto;width: 1080px;overflow: hidden;"  hidden="true">
+			<img src="static/datails.jpg" style="width: 100%;text-align: center;"/>
+		</div>
+		<div class="info">
+			<img src="static/picture/pb.jpg" />
+			<img src="static/picture/con01.jpg" />
+
+			<img src="static/picture/con02-20180614.jpg" border="0" usemap="#button" />
+			<map name="button" id="button"><area shape="rect" coords="529,87,718,110" href="javascript:show_rand_wx(1,6);" />
+<map name="Syzx" id="Syzx">
+<area shape="rect" style="outline:none;" coords="100,100,100,45" href="javascript:show_rand_wx(1,6);" title="在线咨询">
+</map>
+			<img src="static/picture/con05.jpg" />
+		</div>
+		<script>
+			$(function() {
+				var num = Math.ceil(Math.random() * 25);
+				if(num < 10) {
+					num = "0" + num;
+				}
+				$("#img_l").attr("src", "/assets/images/desc/rer_l_" + num + ".jpg");
+			})
+		</script>
+		<div class="comment" style="width: 1000px; margin: 0 auto;margin-top:70px;" hidden="true">
+			<div class="c_con" style="padding-left:0;float:left;width:auto;height:253px;border-right: 1px dashed #B5B5B5">
+				<div class="c_top" style="font-size: 20px; margin-bottom: 10px; padding-bottom: 20px; width: 590px; margin-left: 0;"><span id="news" class="active">最新资讯</span>&nbsp;&nbsp;<span>初印象大学</span>
+					<a id="more-news" href="javascript:;" target="_blank" style="font-size:14px;float: right; margin-right: 40px">更多>></a>
+					<a id="more-course" href="javascript:;" target="_blank" style="font-size:14px;float: right; margin-right: 40px">更多>></a>
+				</div>
+				<div id="c_cont" class="zxzx" style="height:180px;border:1px solid #aaa;width:530px;padding: 10px;">
+					<ul style="padding-left: 10px;font-size:14px; margin-top: 5px;line-height: 200%;">
+						<li class="news-list">
+							<a target="_blank" href="javascript:;">清洁面膜需求扩大 年轻女性为消费主力</a>
+							<span style="float:right;font-size: 13px;margin-right:10px;">[2018-07-30]</span>
+						</li>
+						<li class="news-list">
+							<a target="_blank" href="javascript:;">化妆品成分党消费者增多，76%调查者希望成分透明化</a>
+							<span style="float:right;font-size: 13px;margin-right:10px;">[2018-07-30]</span>
+						</li>
+						<li class="news-list">
+							<a target="_blank" href="javascript:;">融合化妆品与生物产业的时代即将来临</a>
+							<span style="float:right;font-size: 13px;margin-right:10px;">[2018-07-28]</span>
+						</li>
+						<li class="news-list">
+							<a target="_blank" href="javascript:;">今年韩妆又一趋势：纷纷进军功能性化妆品市场</a>
+							<span style="float:right;font-size: 13px;margin-right:10px;">[2018-07-28]</span>
+						</li>
+						<li class="news-list">
+							<a target="_blank" href="javascript:;">韩国化妆品攻陷中国市场</a>
+							<span style="float:right;font-size: 13px;margin-right:10px;">[2018-07-26]</span>
+						</li>
+					</ul>
+				</div>
+				<div id="c_cont" class="hpldx" style="height:180px;border:1px solid #aaa;width:530px;padding: 10px;">
+					<ul style="padding-left: 10px;font-size:14px; margin-top: 5px;line-height: 200%;">
+						<li class="news-list">
+							<a target="_blank" href="javascript:;">初印象郑儿美肤导师教你：口红的正确涂法</a>
+							<span style="float:right;font-size: 13px;margin-right:10px;">[2018-07-27 14:03:40]</span>
+						</li>
+						<li class="news-list">
+							<a target="_blank" href="javascript:;">初印象祖儿美肤导师支招：拯救毛孔粗大只需这几招</a>
+							<span style="float:right;font-size: 13px;margin-right:10px;">[2018-07-27 13:50:42]</span>
+						</li>
+						<li class="news-list">
+							<a target="_blank" href="javascript:;">初印象凌薇美肤导师教你：女生哪些习惯坚持下来会变美</a>
+							<span style="float:right;font-size: 13px;margin-right:10px;">[2018-07-25 09:10:38]</span>
+						</li>
+						<li class="news-list">
+							<a target="_blank" href="javascript:;">初印象杨曼美肤导师教你如何预防脂肪粒</a>
+							<span style="float:right;font-size: 13px;margin-right:10px;">[2018-07-25 09:06:37]</span>
+						</li>
+						<li class="news-list">
+							<a target="_blank" href="javascript:;">初印象许颖娜美肤导师支招：这些护肤小常识、你都知道了吗?</a>
+							<span style="float:right;font-size: 13px;margin-right:10px;">[2018-07-23 09:19:36]</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<script>
+				$('.hpldx').hide();
+				$('#more-course').hide();
+				
+				$(function() {
+					$('#news').click(function() {
+						$.ajax({
+							"url": "/site/index-ajax", //url请求的地址
+							"success": function(response, status, xhr) {
+								$('.zxzx').show();
+								$('.hpldx').hide();
+								$('#hepulan').removeClass('active');
+								$('#news').addClass('active');
+								$('#more-course').hide();
+								$('#more-news').show();
+							}
+						});
+					});
+				});
+			</script>
+			<div class="eff_right" style="float:right;border: 1px solid #ddd;padding:10px;height:232px">
+				<a href="javascript:show();"> <img src="static/picture/dr.jpg"> </a>
+			</div>
+			<div class="videocont" style="  position: fixed; z-index: 1000; top: 50%; width: 800px; height: 450px; background-color: rgb(0, 0, 0); margin-top: -225px; left: 50%; margin-left: -400px; display: none;">
+				<a href="javascript:hide();" style="float:right; color:#ffffff; font-size:30px; margin:10px;">x</a>
+				<video id="video" controls="controls" width="800" height="400" src="assets/sj_01.mp4"></video>
+			</div>
+			<script>
+				function show() {
+					$(".videocont").show();
+					var vid = document.getElementById("video");
+					vid.play();
+				}
+
+				function hide() {
+					$(".videocont").hide();
+					var vid = document.getElementById("video");
+					vid.pause();
+				}
+			</script>
+			<div class="clearall"></div>
+			<div class="c_bot" style="margin-top: 70px;position: relative;">
+				<p style="position: absolute; left: 0; top: 0; width: 100%; height: 10px; background: #fff; border-top: 1px solid #ddd;"></p>
+				<a href="javascript:show_rand_wx(1,6);"></a>
+			</div>
+		</div>
+		</div>
+		<div class="sidebar-right">
+			<div class="sidebar-content">
+				<div class="wx-content">
+					<div class="qrcode">
+						<img src="static/picture/qrcode.png" alt="">
+					</div>
+				</div>
+				<div class="tel-content">
+					<div class="tel">
+						<img src="static/picture/telephone.png" alt="">
+					</div>
+				</div>
+				<a href="#"><img src="static/picture/top.png" alt=""></a>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="f_top">
+				<div class="con1" style="width: 1000px;margin: 0 auto;line-height: 45px;font-size: 14px;text-align: center;" hidden="true">
+					<a target="_blank" title="初印象大学" href="javascript:;">初印象大学</a> |
+					<a target="_blank" title="品牌历程" href="javascript:;">品牌历程</a> |
+					<a target="_blank" title="联系我们" href="javascript:;">联系我们</a> |
+					<a target="_blank" title="新闻动态" href="javascript:;">新闻动态</a> |
+					<a target="_blank" title="防伪查询" href="javascript:;">防伪查询</a> |
+					<a target="_blank" title="意见反馈" href="javascript:;">意见反馈</a> |
+					<a target="_blank" title="友情链接" href="javascript:;">友情链接</a>
+				</div>
+			</div>
+			<div class="f_addr" style="margin-top: 10px;">
+				<div class="f_addr_info">
+					<p>咨询订购热线：xxx-xxx-xxxx 初印象化妆品官方网站</p>
+					<p>版权所有：东莞市初印象化妆品有限公司 | ICP备案证书号:
+						<a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备18090383号-1</a><br />
+					</p>
+				</div>
+			</div>
+			<div class="f_zs" style="width:100%;text-align:center;">
+				<!--<script id="ebsgovicon" src="static/js/govicons.js"></script>-->
+				<a href="javascript:;" target="_blank" class="fbg f_xr"></a>
+				<a href="javascript:;" target="_blank" class="fbg f_sw"></a>
+				<a href="javascript:;" target="_blank" class="fbg f_bz"></a>
+				<a href="javascript:;" target="_blank" class="fbg f_ba"></a>
+			</div>
+		</div>
+		<script src="static/js/uitotop.js"></script>
+		<div style="display:none;">
+			<img src="static/picture/1.jpg">
+			<img src="static/picture/2.jpg">
+			<img src="static/picture/3.jpg">
+			<img src="static/picture/4.jpg">
+			<img src="static/picture/5.jpg">
+			<img src="static/picture/6.jpg">
+			<img src="static/picture/wx.jpg">
+			<img src="static/picture/hepulan.jpg">
+			<img src="static/picture/tsk_03.jpg">
+		</div>
+		<div style="display:none">
+			<script>
+				var _hmt = _hmt || [];
+				(function() {
+					var hm = document.createElement("script");
+					hm.src = "https://hm.baidu.com/hm.js?f413a2fa27a4fa29fd849efb72b9e86b";
+					var s = document.getElementsByTagName("script")[0];
+					s.parentNode.insertBefore(hm, s);
+				})();
+			</script>
+		</div>
+		<script>
+			window.onscroll = function() {
+				if($(document).scrollTop() > 180) {
+					$(".nav_men_b").addClass('float');
+					$(".nav_c_b").css('padding-left', '48px');
+				} else {
+					$(".nav_men_b").removeClass('float');
+					$(".nav_c_b").css('padding-left', '150px');
+				}
+				if((document.documentElement.scrollTop || document.body.scrollTop) > 100) {
+					$('.dbgd_top').css("display", "inline-block");
+					$('.dbgd_top').click(function() {
+						document.documentElement.scrollTop = 0;
+						document.body.scrollTop = 0
+					});
+				} else {
+					$('.dbgd_top').css("display", "none");
+				}
+			}
+		</script>
+		<script type="text/javascript" id='speedup_test' src="static/js/su.js"></script>
+	</body>
+
+</html>

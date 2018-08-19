@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>初印象防伪查询</title>
+    <meta name="Keywords" content="初印象,初印象护肤中心,初印象防伪查询,初印象脸部检测">
+    <meta name="Description" content="初印象，为你打造第一印象">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <link rel="stylesheet" href="static/css/app.css" />
+    <script src="static/js/zepto.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <style>
+        body {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .anti-fake-wrap {
+            position: relative;
+            font-size: .8em;
+            padding: 20px 0;
+            background-color: #fff;
+        }
+
+        .anti-fake-wrap-inner {
+            background-image: url("static/images/mid.jpg");
+            background-size: 100%;
+            background-repeat: repeat-y;
+            background-position: center;
+            padding: 0 15% 10%;
+        }
+
+        .anti-fake-wrap .top {
+            width: 100%;
+            position: relative;
+            top: 0;
+        }
+
+        .anti-fake-header h1 {
+            text-align: center;
+        }
+
+        .anti-fake-header p {
+            text-indent: 2em;
+        }
+
+        .anti-fake-middle h6 {
+            text-align: center;
+            margin: 1.4063rem 0 .7813rem;
+        }
+
+        .anti-fake-middle .flexbox {
+            text-align: center;
+            white-space: nowrap;
+            margin-bottom: .9375rem;
+        }
+
+        .anti-fake-middle .input {
+            width: 70%;
+        }
+
+        .anti-fake-middle .btn {
+            height: 1.25rem;
+            width: 3.9063rem;
+            background-color: #71a964;
+            border: none;
+            color: #fff;
+            margin-left: .7813rem;
+        }
+
+        .anti-fake-footer .anti-img {
+            width: 70%;
+        }
+
+        .anti-fake-wrap .foot {
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
+        .popup {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 9999;
+            display: none;
+        }
+
+        .popup .mask {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, .5);
+        }
+        .popup .popup-inner{
+            width: 70%;
+            height: 150px;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            border-radius: 1em;
+            border: 4px solid #eee;
+            padding: 1em;
+        }
+        .popup .popup-inner h2{
+            color: #71a964;
+        }
+        .close{
+            color: #bfbfbf;
+            font-size: 1.5em;
+            text-align: center;
+            position: absolute;
+            right: -15px;
+            top: -15px;
+            width: 30px;
+            height: 30px;
+            line-height: 20px;
+            border-radius: 15px;
+            border: 4px solid #eee;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!--<header class="header" id="header">
+        <a href="index.html" class="header-logo">
+            <h1 class="header-logo-title">防伪查询</h1>
+        </a>
+        <div class="header-search">
+            <form action="#" method="post">
+                <input class="header-search-input" type="search" placeholder="洗面奶" autocomplete="off">
+                <button class="header-search-btn_clear" type="button" hidden>×</button>
+                <button class="header-search-btn_search" type="submit">
+    				<div class="header-search-btn_searchBg">
+    				</div>
+    			</button>
+            </form>
+        </div>
+        <a href="#" class="header-user">
+			<img src="static/picture/icon-user.png" alt="">
+    	</a>
+    </header>-->
+
+    <main class="main" id="main">
+        <div class="main-content-goods">
+            <div class="headerBar">
+                <h1 class="headerBar-title">防伪查询</h1>
+            </div>
+            <div class="anti-fake-wrap">
+                <img class="top" src="static/picture/top.jpg" alt="">
+                <div class="anti-fake-wrap-inner">
+                    <div class="anti-fake-header">
+                        <h1>初印象官方防伪查询系统</h1>
+                        <p>自产品上市以来一直受到消费者的疯狂追捧，也引发 了不少不法商家抄袭网站内容，以不正当的宣传手法销售 假冒的初印象护肤品。<br> 非法商家所销售的产品不仅质量、原料极差，也不具备禾 葡兰产品的医美护肤作用，严重伤害了消费者的身心健康
+                            和初印象的合法权益。
+                            <br> 为了让消费者准确辨别真伪，避免购买假货带top来的经济、 精神的双重伤害。<br> 初印象官网为广大顾客提供以下防伪码查询，彻底杜绝假 货的危害。<br>
+                        </p>
+                    </div>
+                    <div class="anti-fake-middle">
+                        <h6>输入防伪码（ENTER YOUR CODE）</h6>
+                        <div class="flexbox">
+                            <input type="text" class="input" name="code" id="code"><button class="btn" id="button" onclick="check_code()">确 认</button>
+                        </div>
+						<p id="message" style="text-align:center;"></p>
+                    </div>
+                    <div class="anti-fake-footer">
+                        <p>查询步骤 :</p>
+                        <ul>
+                            <li>
+                                <p>1、刮开涂层，获得16位防伪码（如图）：</p>
+                                <div style="text-align:center;">
+                                    <img class="anti-img" src="static/picture/cb7c8738db07c4bac739aa1eef609bb0.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <td>
+                                    <p>2、输入16位防伪码(如 0001670853815594)点击查询。
+                                    </p>
+                                    <dl>
+                                        <dt>结果说明：</dt>
+                                        <dd>A、系统提示“ 您好！您所查询的是东莞市初印象化妆品有限公司出售的正牌产品、信息属实， 请放心使用！”恭喜您购买到 初印象的官方正品。</dd>
+                                        <dd>B、系统提示“您所查询的防伪码不存在，谨防假冒!” 很遗憾，您购买的是假冒伪劣产品。</dd>
+                                        <dd>C、系统提示“您所查询的防伪码已被查询过，首次查询时间：2018-7-10 13:20:10。</dd>
+                                    </dl>
+                                </td>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img class="foot" src="static/picture/foot.jpg" alt="">
+            </div>
+        </div>
+
+        <footer class="footer">
+            <h5>咨询订购热线：xxx-xxx-xxx</h5>
+            <h5>版权所有：东莞市初印象化妆品有限公司</h5>
+        </footer>
+    </main>
+    <div class="popup">
+        <i class="mask"></i>
+        <div class="popup-inner">
+            <h2>温馨提示</h2>
+            <p class="popup-txt" id="last"></p>
+            <div id="closeBtn" class="close">×</div>
+        </div>
+    </div>
+    <a id="toTop" href="#" class="footer-backtop-circle">
+        <img src="static/picture/icon-top.png" alt="">
+    </a>
+	<script src="static/js/jquery.min.js"></script>
+	<script type="text/javascript"> 
+ $(function (){ 
+	 $.ajaxSetup({ 
+		 scriptCharset: "gbk", 
+		 contentType: "application/json; charset=gbk" 
+	 }); 
+	 
+	 $('#code').focus(function(){ 
+		 var val = $(this).val().replace(/\s+/g,''); 
+			if(val.length != 16){ 
+			$('#message').html("请输入10到24位防伪码，感谢您对我公司的支持与信赖"); 
+		 }else{ 
+			$('#message').html("防伪码长度正确"); 
+		 } 
+	 }).blur(function(){ 
+		var val = $(this).val().replace(/\s+/g,''); 
+	 if(val.length > 24 ||val.length < 10 ){ 
+		$('#message').html("请输入16位防伪码，感谢您对我公司的支持与信赖"); 
+	 }else{ 
+		$('#message').html("防伪码长度正确"); 
+		} 
+	 }); 
+ }); 
+ function check_code(){ 
+	 var val = $('#code').val().replace(/\s+/g,''); 
+	 if(val.length > 24 ||val.length < 10 ){ 
+		$('#last').html("请输入16位防伪码，感谢您对我公司的支持与信赖"); 
+		$(".popup").show();
+		setTimeout(hidemess, 2000);
+		return false; 
+	 } 
+		 $('#last').html("正在查询，请稍等......"); 
+		 $(".popup").show();
+		 $('#code').attr("disabled", true); 
+	var strurl="" ; 
+	 $.getJSON("http://www.dongyu315.com/fwipjson.asp?callback=?","", 
+	 function(data2) { 
+		 strurl = data2.fwip ; 
+		 $.getJSON(strurl + "/fwqueryjson.asp?callback=?",{FwCode: val}, 
+		 function(data) { 
+			$('#last').html(""); 
+			$('#last').html(data.QueryResult); 
+			$(".popup").show();
+			setTimeout(hidemess, 2000);
+			 setTimeout(btnEnabled, 2000); 
+		 }); 
+	 }); 
+ } 
+ function btnEnabled() { 
+ $("#button").attr("disabled", false); 
+ } 
+ 
+ function hidemess(){
+	$(".popup").hide();
+ }
+
+ $('#closeBtn').click(function(event) {
+     $('.popup').hide();
+ });
+ </script> 
+</body>
+</html>
